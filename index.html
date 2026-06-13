@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshobya Rao</title>
+  <meta name="description" content="Akshobya Rao. Future engineer across mechanical engineering, biotechnology, and software. I pull clean signals out of noisy systems." />
+  <meta property="og:title" content="Akshobya Rao" />
+  <meta property="og:description" content="Mechanical engineering, biotechnology, and software. Machines that move, sensors that listen, software that ties it together." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0a0b" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0b'/%3E%3Cpath d='M3 16h6l2-7 4 14 3-9 2 4h9' fill='none' stroke='%23ff4326' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css?v=1" />
+</head>
+<body class="boot">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__row"><span class="loader__num" id="loaderNum">00</span><span class="loader__label">LOADING</span></div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- Grain -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" data-cursor>AKSHOBYA<span>RAO</span></a>
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="#focus" data-cursor>Focus</a>
+      <a href="#lab" data-cursor>F1 Lab</a>
+      <a href="#work" data-cursor>Work</a>
+      <a href="#contact" class="nav__cta" data-cursor>Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu">
+    <a href="#focus">Focus</a>
+    <a href="#lab">F1 Lab</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- HERO -->
+    <section class="hero">
+      <canvas class="hero__canvas" id="signal" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <p class="hero__eyebrow" data-anim>Future engineer &nbsp;/&nbsp; Naperville, IL &nbsp;/&nbsp; est. 2028</p>
+        <h1 class="hero__title">
+          <span class="line"><span>I find the</span></span>
+          <span class="line"><span>signal in</span></span>
+          <span class="line"><span>the <em>noise.</em></span></span>
+        </h1>
+        <div class="hero__foot">
+          <p class="hero__tag" data-anim>Mechanical engineering, biotechnology, and software. Three lanes, one move: pull a clean signal out of a noisy system.</p>
+          <a href="#contact" class="btn" data-cursor data-magnet><span>Get in touch</span> <i>&#8599;</i></a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span>SCROLL</span></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee">
+        <span>MECHANICAL ENGINEERING</span><b>✶</b><span>BIOTECH</span><b>✶</b><span>SOFTWARE</span><b>✶</b><span>VEHICLE DYNAMICS</span><b>✶</b><span>BIOSENSORS</span><b>✶</b><span>ROBOTICS</span><b>✶</b><span>TELEMETRY</span><b>✶</b>
+        <span>MECHANICAL ENGINEERING</span><b>✶</b><span>BIOTECH</span><b>✶</b><span>SOFTWARE</span><b>✶</b><span>VEHICLE DYNAMICS</span><b>✶</b><span>BIOSENSORS</span><b>✶</b><span>ROBOTICS</span><b>✶</b><span>TELEMETRY</span><b>✶</b>
+      </div>
+    </div>
+
+    <!-- STATEMENT -->
+    <section class="statement">
+      <p class="statement__text">
+        <span data-word>Take</span> <span data-word>a</span> <span data-word>messy,</span> <span data-word>complex</span> <span data-word>system</span>
+        <span data-word>and</span> <span data-word>pull</span> <span data-word>one</span> <span data-word><em>clean</em></span> <span data-word><em>signal</em></span>
+        <span data-word>out</span> <span data-word>of</span> <span data-word>it,</span> <span data-word>fast.</span>
+      </p>
+    </section>
+
+    <!-- 01 FOCUS -->
+    <section class="sec" id="focus">
+      <div class="sec__head" data-anim>
+        <span class="sec__no">01</span>
+        <h2 class="sec__title">Focus</h2>
+      </div>
+      <div class="focus">
+        <article class="focus__item" data-anim>
+          <span class="focus__tag">Mechanical</span>
+          <h3 class="focus__h">Mechanical engineering</h3>
+          <p class="focus__p">Vehicle dynamics, robotics, telemetry. Formula 1 is where it gets loud, finding pace where everyone else sees noise.</p>
+        </article>
+        <article class="focus__item" data-anim>
+          <span class="focus__tag">Biotech</span>
+          <h3 class="focus__h">Non-invasive health tech</h3>
+          <p class="focus__p">Your body is always broadcasting. I want to build the cheap, simple tools that finally read it.</p>
+        </article>
+        <article class="focus__item" data-anim>
+          <span class="focus__tag">Software</span>
+          <h3 class="focus__h">The connective tissue</h3>
+          <p class="focus__p">Data pipelines, simulation, and the interfaces that turn hardware and biology into something you can actually use.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 THE CASE -->
+    <section class="sec" id="case">
+      <div class="sec__head" data-anim>
+        <span class="sec__no">02</span>
+        <h2 class="sec__title">The case</h2>
+      </div>
+      <p class="case__lead" data-anim>I don&rsquo;t just learn things. I <em>ship</em> them, end to end.</p>
+      <div class="proof">
+        <div class="proof__item" data-anim>
+          <span class="proof__k">Builder</span>
+          <h3 class="proof__h">Design &amp; build</h3>
+          <p class="proof__p">Every site here designed and built solo, concept to code.</p>
+        </div>
+        <div class="proof__item" data-anim>
+          <span class="proof__k">Range</span>
+          <h3 class="proof__h">Hardware to web</h3>
+          <p class="proof__p">C++ control loops, full-stack apps, and biosensor research.</p>
+        </div>
+        <div class="proof__item" data-anim>
+          <span class="proof__k">Initiative</span>
+          <h3 class="proof__h">I start things</h3>
+          <p class="proof__p">Founded a nonprofit and a design studio as a sophomore.</p>
+        </div>
+        <div class="proof__item" data-anim>
+          <span class="proof__k">Proven</span>
+          <h3 class="proof__h">At a high level</h3>
+          <p class="proof__p">Worlds-qualifying robotics and competitive speech.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 F1 LAB -->
+    <section class="sec" id="lab">
+      <div class="sec__head" data-anim>
+        <span class="sec__no">03</span>
+        <h2 class="sec__title">Formula 1 Lab</h2>
+      </div>
+      <div class="lab">
+        <a class="labcard labcard--a" href="https://github.com/AkshobyaRaoSWE/f1-track-dominance" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="labcard__no">/01</span>
+          <h3 class="labcard__t">Track Dominance</h3>
+          <p class="labcard__d">Telemetry viewer. Two drivers, one lap, who is faster where. Code &#8599;</p>
+        </a>
+        <a class="labcard labcard--b" href="https://github.com/AkshobyaRaoSWE/f1-stewards" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="labcard__no">/02</span>
+          <h3 class="labcard__t">FIA Stewards&rsquo; Log</h3>
+          <p class="labcard__d">Every F1 stewards&rsquo; decision, made searchable. Code &#8599;</p>
+        </a>
+        <a class="labcard labcard--c" href="https://github.com/AkshobyaRaoSWE/f1-fantasy" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="labcard__no">/03</span>
+          <h3 class="labcard__t">F1 Fantasy Lab</h3>
+          <p class="labcard__d">Build and stress-test fantasy lineups. Code &#8599;</p>
+        </a>
+        <a class="labcard labcard--d" href="https://github.com/AkshobyaRaoSWE/f1-helmets" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="labcard__no">/04</span>
+          <h3 class="labcard__t">The Grid</h3>
+          <p class="labcard__d">The whole grid&rsquo;s helmet designs, in one gallery. Code &#8599;</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 04 PROJECTS -->
+    <section class="sec" id="work">
+      <div class="sec__head" data-anim>
+        <span class="sec__no">04</span>
+        <h2 class="sec__title">Projects</h2>
+      </div>
+      <div class="projects">
+        <a class="pcard" href="https://studentteachers.dev" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="pcard__media"><img src="assets/work-studentteachers.jpg" alt="StudentTeachers" loading="lazy" /></span>
+          <span class="pcard__body">
+            <span class="pcard__top"><span class="pcard__t">StudentTeachers</span><span class="pcard__yr">2026</span></span>
+            <span class="pcard__d">A nonprofit I founded to get kids into careers early. Designed and shipped the entire site myself.</span>
+            <span class="pcard__foot"><span class="pcard__tags"><span>Founder</span><span>Design</span><span>Build</span></span><span class="pcard__go">Visit &#8599;</span></span>
+          </span>
+        </a>
+        <a class="pcard" href="https://fifty-labs.vercel.app" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="pcard__media"><img src="assets/work-fiftylabs.jpg" alt="Fifty Labs" loading="lazy" /></span>
+          <span class="pcard__body">
+            <span class="pcard__top"><span class="pcard__t">Fifty Labs</span><span class="pcard__yr">Ongoing</span></span>
+            <span class="pcard__d">My design studio. Bold, performant sites for brands that refuse to look like everyone else.</span>
+            <span class="pcard__foot"><span class="pcard__tags"><span>Studio</span><span>Brand</span><span>Motion</span></span><span class="pcard__go">Visit &#8599;</span></span>
+          </span>
+        </a>
+        <a class="pcard" href="https://www.ilref.org" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="pcard__media"><img src="assets/work-ilref.jpg" alt="Illinois Robotics Education Foundation" loading="lazy" /></span>
+          <span class="pcard__body">
+            <span class="pcard__top"><span class="pcard__t">ILREF</span><span class="pcard__yr">2026</span></span>
+            <span class="pcard__d">Rebuilt a robotics foundation&rsquo;s website into a fast, modern React and TypeScript app.</span>
+            <span class="pcard__foot"><span class="pcard__tags"><span>React</span><span>TypeScript</span></span><span class="pcard__go">Visit &#8599;</span></span>
+          </span>
+        </a>
+        <a class="pcard" href="https://github.com/AkshobyaRaoSWE/odometry-sim" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="pcard__cover pcard__cover--red"><span>odo&nbsp;sim</span></span>
+          <span class="pcard__body">
+            <span class="pcard__top"><span class="pcard__t">Odometry Sim</span><span class="pcard__yr">Code</span></span>
+            <span class="pcard__d">Differential-drive odometry and pure pursuit with IMU sensor fusion. The control work, simulated and tested end to end.</span>
+            <span class="pcard__foot"><span class="pcard__tags"><span>Python</span><span>Robotics</span><span>Control</span></span><span class="pcard__go">Code &#8599;</span></span>
+          </span>
+        </a>
+        <a class="pcard" href="https://github.com/AkshobyaRaoSWE/roundtable-rumble" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="pcard__cover pcard__cover--ink"><span>roundtable</span></span>
+          <span class="pcard__body">
+            <span class="pcard__top"><span class="pcard__t">Roundtable Rumble</span><span class="pcard__yr">Code</span></span>
+            <span class="pcard__d">A comedy panel show you play: five AI characters argue a topic and you bet on the winner. Streaming Next.js and Groq.</span>
+            <span class="pcard__foot"><span class="pcard__tags"><span>Next.js</span><span>AI</span><span>Groq</span></span><span class="pcard__go">Code &#8599;</span></span>
+          </span>
+        </a>
+        <a class="pcard" href="https://github.com/AkshobyaRaoSWE/file_converter" target="_blank" rel="noopener" data-anim data-cursor>
+          <span class="pcard__cover pcard__cover--ink"><span>file&nbsp;conv</span></span>
+          <span class="pcard__body">
+            <span class="pcard__top"><span class="pcard__t">file_converter</span><span class="pcard__yr">OSS</span></span>
+            <span class="pcard__d">Convert files for free, with no ads and nothing to install.</span>
+            <span class="pcard__foot"><span class="pcard__tags"><span>Open source</span><span>Tool</span></span><span class="pcard__go">Code &#8599;</span></span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 04 CONTACT -->
+    <section class="sec contact" id="contact">
+      <div class="sec__head" data-anim>
+        <span class="sec__no">05</span>
+        <h2 class="sec__title">Contact</h2>
+      </div>
+      <a href="mailto:akshobyaraoglobal@gmail.com" class="contact__big" data-cursor data-magnet>
+        <span class="line"><span>LET&rsquo;S</span></span>
+        <span class="line"><span>TALK <em>&#8599;</em></span></span>
+      </a>
+      <div class="contact__foot" data-anim>
+        <a href="mailto:akshobyaraoglobal@gmail.com" data-cursor>akshobyaraoglobal@gmail.com</a>
+        <div class="contact__soc">
+          <a href="https://www.linkedin.com/in/akshobya-rao-a852a0361/" target="_blank" rel="noopener" data-cursor>LinkedIn</a>
+          <a href="https://github.com/AkshobyaRaoSWE" target="_blank" rel="noopener" data-cursor>GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Akshobya Rao</span>
+    <span>Naperville, IL</span>
+    <span id="clock">--:--:--</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/main.js?v=1"></script>
+</body>
+</html>
